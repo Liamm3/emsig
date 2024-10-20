@@ -1,0 +1,7 @@
+name: 'Liam Wohlfart'
+super: true
+id: ad0b2818-4850-43de-a447-4160ddeb1a5f
+password_hash: $2y$12$52qUL.8Vfwxn0QuZvK4BUe6m3tr50pK1uWFIo1k5jLpgzQtaalUtW
+preferences:
+  locale: de
+  favorites: {  }

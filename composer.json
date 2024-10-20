@@ -12,7 +12,12 @@
         "php": "^8.2",
         "laravel/framework": "^11",
         "laravel/tinker": "^2.9",
-        "statamic/cms": "^5.0"
+        "spatie/browsershot": "^4.3",
+        "spatie/image": "^3.7",
+        "statamic/cms": "^5.0",
+        "studio1902/statamic-peak-browser-appearance": "^3.4",
+        "studio1902/statamic-peak-seo": "^8.0",
+        "studio1902/statamic-peak-tools": "^6.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8.1",
