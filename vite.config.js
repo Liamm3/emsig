@@ -1,6 +1,9 @@
 import laravel from 'laravel-vite-plugin'
 import { defineConfig, loadEnv } from 'vite'
 
+const port = 5173;
+const origin = `${process.env.DDEV_PRIMARY_URL}:${port}`;
+
 export default defineConfig(({ command, mode }) => {
     const env = loadEnv(mode, process.cwd(), '')
     return {
@@ -23,7 +26,14 @@ export default defineConfig(({ command, mode }) => {
             })
         ],
         server: {
-            open: env.APP_URL
+            // open: env.APP_URL,
+            // respond to all network requests
+            host: '0.0.0.0',
+            port,
+            strictPort: true,
+            // Defines the origin of the generated asset URLs during development,
+            // this will also be used for the public/hot file (Vite devserver URL)
+            origin,
         }
     }
 });
