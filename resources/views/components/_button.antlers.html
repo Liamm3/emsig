@@ -4,6 +4,7 @@
     @param* label The caption label.
     @param as The wrapping element. Defaults to `a`.
     @param button_type `Inline` if the button needs to be rendered as an inline button.
+    @param button_color accent oder primary
     @param faux Boolean. For faux button wrapped in an actual button/anchor.
     @param inverted Boolean. When the button needs inverted styles.
 #}}
@@ -19,13 +20,12 @@
             )}}
             {{ switch(
                 (button_type === 'inline' && !inverted) => 'text-neutral decoration-primary focus:outline-primary',
-                (button_type === 'button' && !inverted) => 'bg-primary text-white focus:outline-primary',
+                (button_type === 'button' && !inverted) => 'bg-{button_color} text-white focus:outline-{button_color}',
             )}}
             {{ switch(
                 (button_type === 'inline' && inverted) => 'text-white decoration-white focus:outline-white',
                 (button_type === 'button' && inverted) => 'bg-white text-primary focus:outline-white',
             )}}
-            {{ class }}
         "
         {{ slot:attributes }}
         {{ !faux ?= { partial:statamic-peak-tools::snippets/button_attributes } }}

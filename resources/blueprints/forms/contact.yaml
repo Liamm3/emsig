@@ -17,7 +17,7 @@ tabs:
           -
             handle: email
             field:
-              display: 'Email address'
+              display: 'E-Mail Adresse'
               type: text
               validate:
                 - required

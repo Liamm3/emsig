@@ -11,9 +11,8 @@ module.exports = {
         DEFAULT: colors.slate['800'],
         ...colors.slate
       },
-      primary: {
-        DEFAULT: 'oklch(53.24% 0.301 290.86 / <alpha-value>)'
-      },
+      primary: '#f85fa2',
+      accent: '#7b00ff'
     },
     extend: {
       // Set default transition durations and easing when using the transition utilities.

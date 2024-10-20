@@ -26,5 +26,7 @@ module.exports = {
     './vendor/studio1902/**/*.html',
     './vendor/studio1902/**/*.js',
   ],
-  safelist: []
+  safelist: [
+
+  ]
 }

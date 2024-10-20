@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: ad0b2818-4850-43de-a447-4160ddeb1a5f
-updated_at: 1729435434
+updated_at: 1729439418
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -36,6 +36,17 @@ page_builder:
                 entry: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
                 button_type: button
                 attr_aria: 'Zum Kontaktformular'
+                farbe_feld: '#f85fa2'
+                button_color: primary
+              -
+                id: m2hr7ppe
+                label: 'Services entdecken'
+                link_type: entry
+                target_blank: false
+                entry: 6417845a-ca99-4e23-ae1f-8b74ed303c25
+                button_type: button
+                farbe_feld: '#f85fa2'
+                button_color: accent
     type: article
     enabled: true
   -
