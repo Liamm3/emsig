@@ -18,10 +18,8 @@
                 >
                     <a
                         class="
-                            flex items-center font-bold text-sm hover:text-primary
-                            {{ is_current || is_parent
-                                ? 'text-primary'
-                                : 'text-neutral' }}
+                            flex items-center font-bold text-sm hover:underline
+                            {{ is_current || is_parent ?= 'underline' }}
                         "
                         {{ if children }}
                             href="#"

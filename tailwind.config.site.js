@@ -1,28 +1,16 @@
-//--------------------------------------------------------------------------
-// Tailwind site configuration
-//--------------------------------------------------------------------------
-//
-// Use this file to completely define the current sites design system by
-// adding and extending to Tailwinds default utility classes.
-//
-
 const defaultTheme = require('tailwindcss/defaultTheme')
 const plugin = require('tailwindcss/plugin')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
   theme: {
-    // Here we define the default colors available. If you want to include
-    // all default Tailwind colors you should extend the colors instead.
     colors: {
       black:   '#000',
       white:  '#fff',
-      // Neutrals: neutral colors, with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
       neutral: {
         DEFAULT: colors.slate['800'],
         ...colors.slate
       },
-      // Primary: primary brand color with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
       primary: {
         DEFAULT: 'oklch(53.24% 0.301 290.86 / <alpha-value>)'
       },
