@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: ad0b2818-4850-43de-a447-4160ddeb1a5f
-updated_at: 1729433609
+updated_at: 1729435434
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -20,32 +20,29 @@ page_builder:
         content:
           -
             type: text
-            text: 'Start out on top'
+            text: 'emsig.work - Ihr Partner fürs Internet'
       -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Peak is your personal bespoke development sherpa. Start every project with this kit full of development goodies. '
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "But beware, this kit ain't here to be pretty. There are some examples of what Peak can do, but the rest is up to you. "
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Get climbing!'
+        type: set
+        attrs:
+          id: m2hp56uk
+          values:
+            type: buttons
+            buttons:
+              -
+                id: m2hp58gk
+                label: 'Jetzt kontaktieren!'
+                link_type: entry
+                target_blank: false
+                entry: 5c526dbf-9dd7-4c52-98d8-54e00ebddfb6
+                button_type: button
+                attr_aria: 'Zum Kontaktformular'
     type: article
     enabled: true
   -
     id: eFlcYHyl
     title: Features
     type: cards
-    enabled: true
+    enabled: false
     cards:
       -
         id: lly5m22j
